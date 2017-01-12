@@ -62,6 +62,7 @@ Use it like this:
 - hosts: servers
   roles:
      - role: bjoernalbers.wildfly
+       wildfly_config: standalone-full.xml
 ```
 
 ## License
