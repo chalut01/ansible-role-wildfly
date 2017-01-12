@@ -27,7 +27,7 @@
     path: "{{ wildfly_prefix }}"
     state: directory
 
-- name: download wildfly
+- name: download archive
   get_url:
     url: "{{ wildfly_url }}"
     dest: "{{ wildfly_prefix }}/{{ wildfly_archive }}"
@@ -58,14 +58,14 @@
     mode: 0755
     state: directory
 
-- name: copy systemd config
-  copy:
-    src: "{{ wildfly_home }}/docs/contrib/scripts/systemd/wildfly.conf"
-    remote_src: yes
+- name: copy config file
+  template:
+    src: wildfly.conf.j2
     dest: "/etc/wildfly/wildfly.conf"
     owner: root
     group: root
     mode: 0644
+  notify: restart wildfly
 
 - name: copy systemd service
   copy:
@@ -75,6 +75,7 @@
     owner: root
     group: root
     mode: 0644
+  notify: restart wildfly
 
 - name: copy systemd script
   copy:
@@ -84,6 +85,7 @@
     owner: "{{ wildfly_user }}"
     group: "{{ wildfly_user }}"
     mode: 0755
+  notify: restart wildfly
 
 - name: create var run directory
   file:
@@ -93,9 +95,8 @@
     mode: 0755
     state: directory
 
-- name: enable and start service
+- name: start wildfly
   service:
     name: "wildfly"
     enabled: yes
     state: running
-
