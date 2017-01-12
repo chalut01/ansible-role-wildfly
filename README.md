@@ -19,8 +19,10 @@ Your host must have internet access in order to download the WildFly archive.
 
 WildFly v10.1.0 gets installed by default:
 
-    wildfly_version: "10.1.0.Final"
-    wildfly_checksum: "sha1:5ea0a70a483a4beaf327faeaf0a391208d33d4bd"
+```yaml
+wildfly_version: "10.1.0.Final"
+wildfly_checksum: "sha1:5ea0a70a483a4beaf327faeaf0a391208d33d4bd"
+```
 
 If you want to install a different version don't forget to update the SHA-1
 checksum as well!
