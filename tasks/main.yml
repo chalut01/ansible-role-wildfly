@@ -44,8 +44,8 @@
 
 - name: create symlink
   file:
-    src: "{{ wildfly_prefix }}/{{ wildfly_basename }}"
-    dest: "{{ wildfly_home }}"
+    src: "{{ wildfly_home }}"
+    dest: "{{ wildfly_prefix }}/wildfly"
     owner: "{{ wildfly_user }}"
     group: "{{ wildfly_user }}"
     state: link

@@ -44,9 +44,8 @@ wildfly_bind: 0.0.0.0
 
 ### Wildfly HOME
 
-Wildfly's HOME is `/opt/wildfly` - a symlink to the basedir.
-Please use `wildfly_home` to access this directory from your
-roles or playbooks.
+Please use `wildfly_home` to access Wildfly's basedir, i.e.
+`/opt/wildfly-X.Y.Z`.
 
 
 ## Dependencies
