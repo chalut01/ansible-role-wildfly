@@ -1,4 +1,7 @@
 ---
+- include: clean.yml
+  when: wildfly_reinstall
+
 - name: install packages
   apt:
     name: "{{ item }}"

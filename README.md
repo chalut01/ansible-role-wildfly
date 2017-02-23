@@ -49,6 +49,10 @@ wildfly_bind: 0.0.0.0
 Please use `wildfly_home` to access Wildfly's basedir, i.e.
 `/opt/wildfly-X.Y.Z`.
 
+### Reinstall
+
+Set `wildfly_reinstall` to *yes* when you want to delete `wildfly_home` before
+installation.
 
 ## Dependencies
 
