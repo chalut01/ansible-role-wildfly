@@ -55,8 +55,6 @@ None.
 
 ## Example Playbook
 
-Use it like this:
-
 ```yaml
 - hosts: servers
   roles:
@@ -64,11 +62,7 @@ Use it like this:
        wildfly_config: standalone-full.xml
 ```
 
+
 ## License
 
-BSD
-
-
-## Author Information
-
-Björn Albers
+This Ansible role is released under the [MIT License](LICENSE.txt).
