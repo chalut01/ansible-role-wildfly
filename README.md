@@ -1,4 +1,6 @@
-# WildFly
+# Ansible Role: wildFly
+
+[![Build Status](https://travis-ci.org/bjoernalbers/ansible-role-wildfly.svg?branch=master)](https://travis-ci.org/bjoernalbers/ansible-role-wildfly)
 
 Install [WildFly Application Server](http://wildfly.org) along with OpenJDK on
 Ubuntu.
