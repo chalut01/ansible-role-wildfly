@@ -1,4 +1,4 @@
 ---
-- hosts: localhost
+- hosts: 192.168.10.17
   roles:
-    - ansible-role-wildfly
+    - _11__wildfly
