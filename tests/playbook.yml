@@ -1,9 +1,4 @@
 - hosts: 192.168.10.17
   roles:
-     - role: 
-     tasks/
-     handlers/
-     vars/
-     meta/
-     defaults/
+     - role: tasks/
        wildfly_config: standalone-full.xml
