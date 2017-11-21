@@ -5,6 +5,5 @@
      handlers/
      vars/
      meta/
-     tasks/
      defaults/
        wildfly_config: standalone-full.xml
