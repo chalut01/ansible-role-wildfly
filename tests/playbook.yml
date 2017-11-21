@@ -1,4 +1,4 @@
 - hosts: 192.168.10.17
   roles:
-     - role: chalut01.ansible-role-wildfly
+     - role: chalut01.ansible-role-wildfly/
        wildfly_config: standalone-full.xml
