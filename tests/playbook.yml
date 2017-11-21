@@ -1,4 +1,4 @@
 - hosts: 192.168.10.17
   roles:
-     - role: _13__wildfly/
+     - role: jom/
        wildfly_config: standalone-full.xml
